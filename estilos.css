@@ -4,10 +4,15 @@
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
-
+body{
+    background-color: #422163;
+}
+.mi-clase {
+  background-color: #a6c4db;
+}
 body{
     justify-content: flex-end;
-    background-color: #c6a3e9;
+    background-color: #eef;
     color: #333;
     line-height: 1.6;
     padding: 20px;
