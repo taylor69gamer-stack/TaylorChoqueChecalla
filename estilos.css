@@ -74,19 +74,13 @@ article ul, ol, dl{
     margin: 18px;
 }
 article table{
-    background-color: rgb(106, 40, 119);
+    background-color: rgb(165, 201, 195);
     border: 2px solid;
 }
 article table th,td{
     border: 1px solid;
 }
-article table{
-    background-color: rgb(161, 139, 165);
-    border: 3px solid;
-}
-article table th,td{
-    border: 2px solid;
-}
+
 aside{
     flex: 1;
     background-color: #eef;
