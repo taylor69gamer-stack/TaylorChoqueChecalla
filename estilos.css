@@ -81,6 +81,7 @@ article table th,td{
     border: 1px solid;
 }
 aside{
+    justify-content: center;
     flex: 1;
     background-color: #eef;
     padding: 15px;
