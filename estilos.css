@@ -5,13 +5,13 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
-body{
-    justify-content: flex-end;
-    background-color: #eef;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg, #1e1e2f, #162447, #1f4068, #1b1b2f);
+    background-size: 400% 400%;
+    animation: fondo-animado 15s ease infinite;
 }
 header{
     text-align: center;
