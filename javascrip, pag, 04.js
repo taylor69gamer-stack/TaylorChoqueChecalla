@@ -10,13 +10,12 @@ function feliz(){
 }
 function cambiarColor(){
     document.getElementById('MENÚ').src.color='#E8BEAC';
-
 }
 function cambiarLogo(){
     document.getElementById('logo').src='Imagenes/Logo Inicial.JPG';
 }
 function cambiarFondo(){
-    document.getElementById('menu').style.background='#524604';
+    document.getElementById('MENÚ').style.background='#524604';
 }
 function cambiarTexto(){
     document.getElementById('Subtitulo').textContent="YA LE SE AL 35";
