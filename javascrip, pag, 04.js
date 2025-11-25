@@ -9,7 +9,7 @@ function feliz(){
     document.getElementById('carita').src='Imagenes/caritaFelíz 01.png';
 }
 function cambiarColor(){
-    document.getElementById('menu').src.color='#E8BEAC';
+    document.getElementById('MENÚ').src.color='#E8BEAC';
 
 }
 function cambiarLogo(){
