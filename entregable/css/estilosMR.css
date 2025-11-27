@@ -1,6 +1,4 @@
-/* --------------------------------------------------
-   CONFIGURACIÓN GENERAL
--------------------------------------------------- */
+/*--CONFIGURACIÓN GENERAL--*/
 * {
     margin: 0;
     padding: 0;
@@ -21,9 +19,7 @@ body {
     margin: auto;
 }
 
-/* --------------------------------------------------
-   CABECERA
--------------------------------------------------- */
+/*--CABECERA--*/
 header {
     background: #ffffff;
     padding: 20px 0;
@@ -67,9 +63,7 @@ nav ul li.current a {
     font-weight: 600;
 }
 
-/* --------------------------------------------------
-   SHOWCASE / HERO
--------------------------------------------------- */
+/*--SHOWCASE / HERO--*/
 #showcase {
     background: url("../images/hero-bg.jpg") no-repeat center/cover;
     padding: 140px 0;
@@ -104,9 +98,7 @@ nav ul li.current a {
     background: #e8e8e8;
 }
 
-/* --------------------------------------------------
-   FEATURES / CARACTERÍSTICAS
--------------------------------------------------- */
+/*--FEATURES / CARACTERÍSTICAS--*/
 #features {
     padding: 60px 0;
 }
@@ -136,9 +128,7 @@ nav ul li.current a {
     color: #4CAF50;
 }
 
-/* --------------------------------------------------
-   PRODUCTOS DESTACADOS
--------------------------------------------------- */
+/*--PRODUCTOS DESTACADOS--*/
 #main-products {
     padding: 70px 0;
     background: #fafafa;
@@ -198,9 +188,7 @@ nav ul li.current a {
     background: #3e8f43;
 }
 
-/* --------------------------------------------------
-   FOOTER
--------------------------------------------------- */
+/*--FOOTER--*/
 footer {
     background: #ffffff;
     text-align: center;
@@ -220,9 +208,7 @@ footer a:hover {
     color: #2e7d32;
 }
 
-/* --------------------------------------------------
-   RESPONSIVE DESIGN
--------------------------------------------------- */
+/*--RESPONSIVE DESIGN--*/
 @media (max-width: 900px) {
     #features .container {
         flex-direction: column;
