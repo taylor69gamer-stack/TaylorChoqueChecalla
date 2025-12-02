@@ -62,7 +62,12 @@ nav ul li.current a {
     color: #4CAF50;
     font-weight: 600;
 }
-
+header {
+    max-width: 150px;
+    max-height: 150px;
+    margin-bottom: 10px;
+    border:3px solid #2e7d32
+}
 /*--SHOWCASE / HERO--*/
 #showcase {
     background: url("css/fondo01.png") repeat center/cover;
