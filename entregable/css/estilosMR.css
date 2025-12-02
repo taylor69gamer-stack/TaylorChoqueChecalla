@@ -65,11 +65,11 @@ nav ul li.current a {
 
 /*--SHOWCASE / HERO--*/
 #showcase {
-    background: url("../images/hero-bg.jpg") no-repeat center/cover;
+    background: url("css/fondo01.png") no-repeat center/cover;
     padding: 140px 0;
     text-align: center;
     color: #fff;
-    background-color: #4CAF50; /* fallback si no hay imagen */
+    background-color: #4CAF50;
 }
 
 #showcase h1 {
