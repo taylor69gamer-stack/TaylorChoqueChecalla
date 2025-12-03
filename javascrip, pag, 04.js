@@ -28,7 +28,7 @@ function resetCarita(){
 }
 
 function oscurecerFondo(){
-    document.getElementById('MENÚ').style.background = '#2a2a2a';
+    document.getElementById('MENÚ').style.background = '#ffffff';
 }
 
 function agrandarTexto(){
@@ -40,7 +40,7 @@ function reducirTexto(){
 }
 
 function cambiarLogo2(){
-    document.getElementById('logo').src = 'css/images/LogoDePestaña.png';
+    document.getElementById('logo').src = 'Imagenes/Logo Inicial.JPG';
 }
 
 function cambiarColorTexto(){
