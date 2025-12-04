@@ -1,4 +1,6 @@
-/*--CONFIGURACIÓN GENERAL--*/
+/*--------------------------------------
+  CONFIGURACIÓN GENERAL
+---------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +13,12 @@ body {
     color: #222;
     line-height: 1.6;
 
-    background-image: url("entregable/css/fondo01.png"); /* ruta a tu imagen */
+    background-image: url("entregable/css/fondo01.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 /* Contenedor general */
 .container {
     width: 90%;
@@ -23,7 +26,9 @@ body {
     margin: auto;
 }
 
-/*--CABECERA--*/
+/*--------------------------------------
+  CABECERA
+---------------------------------------*/
 header {
     background: #ffffff;
     padding: 20px 0;
@@ -31,13 +36,13 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.08); /* agregado */
 }
 
 header img{
     max-width: 150px;
     max-height: 150px;
     margin-bottom: 10px;
-    transition: display all;
 }
 
 #branding h1 {
@@ -74,27 +79,39 @@ nav ul li.current a {
     font-weight: 600;
 }
 
-/*--SHOWCASE / HERO--*/
+/*--------------------------------------
+  SHOWCASE / HERO
+---------------------------------------*/
 #showcase {
-    background: url("css/fondo01.png") repeat center/cover;
+    background: url("css/fondo01.png") center/cover no-repeat;
     padding: 140px 0;
     text-align: center;
     color: #fff;
     background-color: #4CAF50;
+    border-radius: 0 0 20px 20px;
+    animation: fadeIn 1.5s ease; /* agregado */
 }
 
 #showcase h1 {
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4); /* agregado */
 }
 
 #showcase p {
     font-size: 20px;
     max-width: 600px;
     margin: 0 auto 20px;
+    text-shadow: 0 0 6px rgba(0,0,0,0.3); /* agregado */
 }
 
+/* Animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Botón principal */
 .btn_primary {
     background: #ffffff;
     color: #4CAF50;
@@ -109,7 +126,38 @@ nav ul li.current a {
     background: #e8e8e8;
 }
 
-/*--FEATURES / CARACTERÍSTICAS--*/
+/*--------------------------------------
+  ARTÍCULOS (Mejora dinámica)
+---------------------------------------*/
+article {
+    background: #fff;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+article h2 {
+    color: #2e7d32;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-weight: 400;
+    color: #444;
+    font-size: 1.2rem;
+}
+
+/*--------------------------------------
+  CARACTERÍSTICAS
+---------------------------------------*/
 #features {
     padding: 60px 0;
 }
@@ -127,6 +175,12 @@ nav ul li.current a {
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
     width: 33%;
+    transition: 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .feature-box img {
@@ -139,7 +193,9 @@ nav ul li.current a {
     color: #4CAF50;
 }
 
-/*--PRODUCTOS DESTACADOS--*/
+/*--------------------------------------
+  PRODUCTOS DESTACADOS
+---------------------------------------*/
 #main-products {
     padding: 70px 0;
     background: #fafafa;
@@ -163,11 +219,12 @@ nav ul li.current a {
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .product-card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .product-card img {
@@ -184,6 +241,7 @@ nav ul li.current a {
     font-weight: 600;
 }
 
+/* Botón secundario */
 .btn_secondary {
     display: inline-block;
     background: #4CAF50;
@@ -199,7 +257,95 @@ nav ul li.current a {
     background: #3e8f43;
 }
 
-/*--FOOTER--*/
+/*--------------------------------------
+  FORMULARIO DE CONTACTO
+---------------------------------------*/
+.py-5 .container {
+    padding-top: 20px;
+}
+
+.display-5 {
+    color: #2a5d34;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contactoForm {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #e2e2e2;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#contactoForm .form-label {
+    font-weight: 600;
+    color: #2a5d34;
+    margin-bottom: 5px;
+}
+
+#contactoForm .form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #c8d6c8;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#contactoForm .form-control:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+    outline: none;
+}
+
+#contactoForm textarea {
+    resize: vertical;
+}
+
+#contactoForm .btn-success {
+    background-color: #3ea04a;
+    border: none;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contactoForm .btn-success:hover {
+    background-color: #2f7e39;
+    transform: translateY(-2px);
+}
+
+/* Datos de contacto */
+article dl {
+    background: #f4f9f4;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #3ea04a;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+article dt {
+    font-weight: bold;
+    color: #3ea04a;
+    margin-top: 10px;
+}
+
+article dd {
+    margin-left: 10px;
+    color: #444;
+}
+
+/*--------------------------------------
+  FOOTER
+---------------------------------------*/
 footer {
     background: #ffffff;
     text-align: center;
@@ -219,7 +365,9 @@ footer a:hover {
     color: #2e7d32;
 }
 
-/*--RESPONSIVE DESIGN--*/
+/*--------------------------------------
+  RESPONSIVE DESIGN
+---------------------------------------*/
 @media (max-width: 900px) {
     #features .container {
         flex-direction: column;
@@ -252,98 +400,4 @@ footer a:hover {
     .product-grid {
         grid-template-columns: 1fr;
     }
-}
-/* Contenedor del formulario */
-.py-5 .container {
-    padding-top: 20px;
-}
-
-/* Título de contacto */
-.display-5 {
-    color: #2a5d34;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Estilo general del formulario */
-#contactoForm {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    max-width: 600px;
-    margin: 20px auto;
-    border: 1px solid #e2e2e2;
-    animation: fadeIn 0.8s ease-in-out;
-}
-
-/* Animación */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Etiquetas */
-#contactoForm .form-label {
-    font-weight: 600;
-    color: #2a5d34;
-    margin-bottom: 5px;
-    display: block;
-}
-
-/* Campos */
-#contactoForm .form-control {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #c8d6c8;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
-
-#contactoForm .form-control:focus {
-    border-color: #4CAF50;
-    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
-    outline: none;
-}
-
-#contactoForm textarea {
-    resize: vertical;
-}
-
-/* Botón */
-#contactoForm .btn-success {
-    background-color: #3ea04a;
-    border: none;
-    padding: 12px 0;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-#contactoForm .btn-success:hover {
-    background-color: #2f7e39;
-    transform: translateY(-2px);
-}
-
-/* Datos de contacto (dl, dt, dd) */
-article dl {
-    background: #f4f9f4;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 5px solid #3ea04a;
-    max-width: 600px;
-    margin: 30px auto;
-}
-
-article dt {
-    font-weight: bold;
-    color: #3ea04a;
-    margin-top: 10px;
-}
-
-article dd {
-    margin-left: 10px;
-    color: #444;
 }
